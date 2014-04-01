@@ -1,0 +1,120 @@
+header
+  position: relative
+  margin-top: 10px
+  padding-right: 14px
+  .container
+    padding-top: 10px
+  img.header
+    width: 120px
+    float: left
+    padding-left: 24px
+    &:hover
+      opacity: .6
+      +transition(.3s)
+
+#about.info
+  border-bottom: 1px solid $ltgray
+  border-top: 1px solid $ltgray
+  background: snow
+  text-align: left
+  margin-bottom: 35px
+  height: 100%
+  .feature-image
+    height: 350px
+    border-bottom: 1px solid $ltgray
+    background-image: url(/images/workspace.jpg)
+    background-position: 0% 80%
+    background-size: 100%
+  img 
+    margin-bottom: 30px
+  
+.about-blurb
+  padding: 70px 30px
+  background: white
+  h3
+    text-align: left
+    font-size: 37px
+    color: black
+  ul 
+    text-align: left
+    margin-top: 26px
+    &.social-icons
+      font-size: 36px
+  li
+    display: inline-block
+    padding: 0 5px 30px
+    color: $mdgray
+
+  p
+    font-family: adobe garamond pro, times, times new roman, serif
+    font-size: 25px
+    font-weight: 200 
+    text-align: center 
+    color: $mdgray
+    line-height: 26px 
+    margin: auto 
+    line-height: 1.6em
+    text-align: left
+  a
+    color: #6F6F6F
+    text-decoration: none
+    &:hover
+      color: darken($ltgray, 20%)
+      +transition(.3s)
+      text-decoration: none
+
+
+.nav
+  text-align: right 
+  margin-bottom: 20px 
+  padding-right: 14px
+  li
+    display: inline-block
+    padding: 10px 0 15px 40px
+    position: relative
+    &:hover
+      background: none !important
+      +transition(.3s)
+    &.active a 
+      color: black
+      font-weight: 600
+    a
+      text-transform: uppercase
+      font-weight: 500
+      letter-spacing: 1.2px
+      font-size: 13px
+      color: #232323
+      text-decoration: none
+      padding-bottom: 3px
+      &.mobile-hover
+        color: rgb(78, 78, 78)
+
+
+
+@media (max-width: 670px)
+
+  .feature-image
+    display: none
+  .about-blurb p
+    font-size: 19px
+  .item p
+    font-size: 18px
+
+@media (max-width: $screen-xs-max)
+
+  .hide-mobile 
+    display: none
+  .about-blurb
+    padding: 20px 14px
+  header
+    img.header
+      padding-left: 15px
+  .nav
+    text-align: right 
+    margin-bottom: 17px 
+    margin-top: 7px
+    padding-right: 0px
+    li
+      display: inline-block
+      padding: 10px 0 15px 40px
+    
