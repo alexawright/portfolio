@@ -1,20 +1,14 @@
 h1
-  color: black
+  +font
+  color: $black
   margin: 16px 0px 16px
   font-size: 22px
   font-weight: 600
   text-align: left
-  +font
   text-transform: uppercase
   letter-spacing: 1.5px
   line-height: 1.6em
   text-decoration: none
-  &:hover 
-    color: rgb(68, 67, 68)
-    +transition(.3s color)
-
-.item p.pull-left
-  text-align: left
 
 h2 a
   text-decoration: none
@@ -27,7 +21,6 @@ h2 a
   float: left
   margin-bottom: 45px
   
-
 h3
   color: rgb(116, 116, 116)
   +font
@@ -37,42 +30,47 @@ h3
   font-weight: 200
   margin-bottom: 10px
 
-.projects.web
-  h4
+.about-blurb 
+  h3
+    text-align: left
+    font-size: 37px
+    color: black
+  ul 
+    text-align: left
+    margin-top: 26px
+    &.social-icons
+      font-size: 36px
+  li
+    display: inline-block
+    font-size: 35px
+    margin-right: 22px
+    color: $mdgray
+    line-height: 32px
+  h5
     color: $black
     +font
-    border-bottom: 1px solid $ltgray
-    font-size: 65px
-    margin-top: 13px
+    line-height: 40px
+    font-size: 45px
     text-align: left
-    font-weight: 300
-    min-height: 60px
-    line-height: 1.5em
+    padding: 40px 0 30px
     font-family: adobe garamond pro, times, times new roman, serif
-    &.last
-      border-bottom: 0px
+  p
+    font-family: adobe garamond pro, times, times new roman, serif
+    font-size: 25px
+    font-weight: 200 
+    text-align: center 
+    color: $mdgray
+    line-height: 26px 
+    margin: auto 
+    line-height: 1.6em
+    text-align: left
+  a
+    color: #6F6F6F
+    text-decoration: none
     &:hover
-      color: $mdgray
-      +transition(.5s)
-
-h5
-  color: $black
-  +font
-  line-height: 1.5em
-  font-size: 45px
-  // font-weight: 200
-  text-align: left
-  padding: 100px 0 50px
-  display: none
-
-h6
-  color: $black
-  +font
-  line-height: 40px
-  font-size: 45px
-  text-align: left
-  padding: 40px 0 30px
-  font-family: adobe garamond pro, times, times new roman, serif
+      color: darken($ltgray, 20%)
+      +transition(.3s)
+      text-decoration: none
 
 .item p
   color: #464646
@@ -83,42 +81,17 @@ h6
   line-height: 1.6em
   text-decoration: none
   margin-bottom: 35px
-
-.item p.list
-  color: #818181
-  font-style: italic
-  font-size: 19px
-  line-height: 1.9em
-  a 
+  &.list
     color: #818181
-
-
-a.email 
-  background: $tan
-  margin: auto 
-  padding: 12px 52px 
-  margin: 60px 0 0
-  color: $white 
-  text-transform: uppercase 
-  text-align: center 
-  font-weight: 500 
-  letter-spacing: 2px 
-  font-size: 12px
-  display: inline-block
-  text-decoration: none
-  &:hover 
-    background: darken($tan, 5%)
-    color: $white
+    font-style: italic
+    font-size: 19px
+    line-height: 1.9em
+    a 
+      color: #818181
 
 \::selection
   background: $ltgray
   color: $white
 
-
-
 @media (max-width: $screen-sm)
 
-
-  .projects.web
-    h4
-      font-size: 35px
