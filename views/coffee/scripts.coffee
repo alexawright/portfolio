@@ -1,10 +1,4 @@
 $ ->
-  $(".nav li a").on "click", ->
-    if $(this).hasClass "about-link"
-      false
-    else 
-      $("#about").slideUp()
-
 
   $(".about-link").on "click", (e) ->
     e.preventDefault()
@@ -16,29 +10,6 @@ $ ->
   if $.isMobile()
     $("a").hover ->
       $(this).addClass "mobile-hover"
-
-
-  activeNav = ->
-
-    navItem = $(".nav li")
-    $(".nav li").removeClass "active"
-
-    if window.location.pathname is "/graphics" 
-      navItem.eq(0).addClass "active"    
-
-    if window.location.pathname is "/" 
-      navItem.eq(0).addClass "active"
-    
-    if window.location.pathname is "/fashion"
-      navItem.eq(2).addClass "active"
-    
-    if window.location.pathname is "/play"
-      navItem.eq(3).addClass "active"
-    
-    if window.location.pathname is "/web"
-      navItem.eq(1).addClass "active"
-
-  activeNav()
 
   if Modernizr.history
 

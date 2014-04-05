@@ -11,7 +11,12 @@ header
       opacity: .7
       +transition(.3s)
 
-#about.info
+.about-link img 
+  position: relative 
+  top: -2px
+  margin-left: 4px 
+
+#about
   border-bottom: 1px solid $ltgray
   border-top: 1px solid $ltgray
   margin-bottom: 35px
@@ -44,7 +49,7 @@ header
     font-size: 18px
 
 @media (max-width: $screen-xs-max)
-  #about.info
+  #about
     padding: 30px 20px
   .hide-mobile 
     display: none
