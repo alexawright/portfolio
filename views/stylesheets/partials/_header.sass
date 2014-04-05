@@ -11,9 +11,14 @@ header
       opacity: .7
       +transition(.3s)
 
-#about.info
-  border-bottom: 1px solid $ltgray
-  border-top: 1px solid $ltgray
+#about 
+  height: 0
+  overflow: hidden
+  +ease(height, .4s)
+  &.active 
+    height: 547px
+
+.about-blurb
   margin-bottom: 35px
   padding: 90px 0
 

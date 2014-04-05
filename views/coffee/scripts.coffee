@@ -3,12 +3,12 @@ $ ->
     if $(this).hasClass "about-link"
       false
     else 
-      $("#about").slideUp()
+      $("#about").removeClass "active"
 
 
   $(".about-link").on "click", (e) ->
     e.preventDefault()
-    $("#about").slideToggle()
+    $("#about").toggleClass "active"
 
   $.isMobile = ->
     navigator.platform.indexOf("iPad") isnt -1 or navigator.platform.indexOf("iPhone") isnt -1
