@@ -2,7 +2,19 @@ $ ->
 
   $(".about-link").on "click", (e) ->
     e.preventDefault()
-    $("#about").slideToggle()
+
+    if $(".about-blurb").hasClass "active"
+      $(".about-blurb").removeClass "active" 
+      setTimeout ( ->
+        $("#about").slideUp(140)
+      ), 400
+
+    else 
+      $("#about").slideDown(140)
+      setTimeout ( ->
+        $(".about-blurb").addClass "active" 
+      ), 100
+
 
   $.isMobile = ->
     navigator.platform.indexOf("iPad") isnt -1 or navigator.platform.indexOf("iPhone") isnt -1
