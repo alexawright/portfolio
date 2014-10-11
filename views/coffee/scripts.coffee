@@ -1,21 +1,20 @@
-$ ->
+# $ ->
 
-  $(".about-link").on "click", (e) ->
-    e.preventDefault()
+#   $(".about-link").on "click", (e) ->
+#     e.preventDefault()
 
-    if $(".about-blurb").hasClass "active"
-      $(".about-blurb").removeClass "active" 
-      setTimeout ( ->
-        $("#about").slideUp(140)
-      ), 400
+#     if $(".about-blurb").hasClass "active"
+#       $(".about-blurb").removeClass "active" 
+#       setTimeout ( ->
+#         $("#about").slideUp(140)
+#       ), 400 
 
-    else 
-      $("#about").slideDown(140)
-      setTimeout ( ->
-        $(".about-blurb").addClass "active" 
-      ), 100
-
-
+#     else 
+#       $("#about").slideDown(140)
+#       setTimeout ( ->
+#         $(".about-blurb").addClass "active" 
+#       ), 100
+                                  
   $.isMobile = ->
     navigator.platform.indexOf("iPad") isnt -1 or navigator.platform.indexOf("iPhone") isnt -1
 
@@ -41,15 +40,15 @@ $ ->
             $content.css "height", ""
             activeNav()  
 
-    $(".nav li a, .projects li a").on "click", (e) ->
-      e.preventDefault()      
-      _link = $(this).attr("href")
+    # $(".nav li a, .projects li a").on "click", (e) ->
+    #   e.preventDefault()      
+    #   _link = $(this).attr("href")
 
-      history.pushState null, null, _link   
-      everPushed = true
+    #   history.pushState null, null, _link   
+    #   everPushed = true
 
-      loadContent _link
-      false
+    #   loadContent _link
+    #   false
 
     $(window).on "popstate", ->
       _link = location.pathname.replace("'", "")
