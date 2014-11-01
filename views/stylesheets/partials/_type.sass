@@ -30,68 +30,28 @@ h3
   font-weight: 200
   margin-bottom: 10px
 
-.about-blurb 
-  +opacity(0)
-  +transition(.5s all ease-in-out)
-  &.active 
-    +opacity(1)
-  h3
-    text-align: left
-    font-size: 37px
-    color: $black
-  ul 
-    text-align: left
-    margin-top: 26px
-    &.social-icons
-      font-size: 36px
-  li
-    display: inline-block
-    font-size: 35px
-    margin-right: 22px
-    color: $mdgray
-    line-height: 32px
-  h5
-    color: $black
-    +font
-    line-height: 40px
-    font-size: 45px
-    text-align: left
-    padding: 0 0 30px
-    +font2
-  p
-    +font2
-    font-size: 25px
-    font-weight: 200 
-    text-align: center 
-    color: $mdgray
-    line-height: 26px 
-    margin: auto 
-    line-height: 1.6em
-    text-align: left
-  a
-    color: #6F6F6F
-    text-decoration: none
-    &:hover
-      color: darken($ltgray, 20%)
-      +transition(.3s)
-      text-decoration: none
-
 .item p
-  color: #464646
-  +font2
-  font-size: 26px
+  +font
+  font-size: 22px
+  color: #858585
+  line-height: 1.9em
+  +font
   text-align: left
   margin: auto
-  line-height: 1.6em
   text-decoration: none
   margin-bottom: 35px
+  a 
+    color: black
+    border-bottom: 1px dotted #ccc
   &.list
     color: #818181
     font-style: italic
     font-size: 22px
     line-height: 1.9em
+    +font2
     a 
       color: #818181
+      border-bottom: none
 
 \::selection
   background: $ltgray
