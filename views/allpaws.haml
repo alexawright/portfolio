@@ -1,30 +1,26 @@
 .item
-  .row
+  .row.bg.allpaws
     .col-md-12   
       %img.load-img.img-responsive{:src => "/images/allpaws/allpaws-7.jpg"} 
-      %img.load-img.img-responsive.space.border{:src => "/images/allpaws/allpaws-8.jpg"} 
-      %img.load-img.img-responsive.space.border{:src => "/images/allpaws/allpaws-1.jpg"}
+  .row
+    .col-md-12   
+      %img.load-img.img-responsive.space.border.shadow{:src => "/images/allpaws/allpaws-8.jpg"} 
+      %img.load-img.img-responsive.space.border.shadow{:src => "/images/allpaws/allpaws-1.jpg"}
       %img.load-img.img-responsive.space{:src => "/images/allpaws/allpaws-10.jpg"}
-      %img.load-img.img-responsive.space.border{:src => "/images/allpaws/allpaws-3.jpg"}
+      %img.load-img.img-responsive.space.border.shadow{:src => "/images/allpaws/allpaws-3.jpg"}
       %img.load-img.img-responsive.space{:src => "/images/allpaws/allpaws-11.jpg"}
       %img.load-img.img-responsive.space{:src => "/images/allpaws/allpaws-9.jpg"}
+  
+.container
   .item-info 
     %h1
       AllPaws
     %p
       AllPaws takes a clean, fresh, modern approach to pet adoption, combining sophisticated online dating functionality, engaging pet content & deep social integration. 
 
-    %p.list
-      Digital Product Design
-      %br
-      Responsive Design
+    %ul.tags
+      %li Digital Product Design
+      %li Responsive Design
     .dash
     %h2 
       %a{:href => "http://www.allpaws.com", :target => "_blank"} www.allpaws.com
-
-
-.pagination
-  %a.previous{:href => "/solssite"}
-    %h3 ← Previous 
-  %a.next{:href => "/wanggrid"}
-    %h3 Next →

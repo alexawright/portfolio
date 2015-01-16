@@ -14,55 +14,109 @@
   margin: auto
 
 .project-tile-wrap 
-  +make-xs-column(6)
+  +make-xs-column(12)
   +make-md-column(6)
   +make-lg-column(6)
+  cursor: pointer
   display: block
-  height: 430px
+  height: 470px
   padding: 0
   &.manus
-    background: yellow
     background: url('/images/tnails/manus.jpg') center no-repeat
     background-size: cover
-  &.cosine
-    background: orange
+
   &.awright
-    background: url('/images/tnails/awright.jpg') center no-repeat
+    background: url('/images/tnails/awright.gif') center no-repeat
     background-size: cover
+
   &.allpaws
-    background: green
     background: url('/images/tnails/allpaws.jpg') center no-repeat
     background-size: cover
+
   &.bitcoin
-    background: blue
     background: url('/images/tnails/bitcoin.jpg') center no-repeat
     background-size: cover
+
+  &.chloe
+    background: url('/images/tnails/chloe.jpg') center no-repeat
+    background-size: cover
+
+  &.cosine
+    background: url('/images/tnails/cosine.jpg') center no-repeat
+    background-size: cover
+
   &.fox
     background: url('/images/tnails/fox.jpg') center no-repeat
     background-size: cover
 
-  &.sols
-    background: pink
-  &.vestorly
-    background: url('/images/tnails/vestorlabs.jpg') center no-repeat
+  &.gifgasm
+    background: url('/images/gifgasm/gifgasm.gif') center no-repeat
     background-size: cover
-  &.wang
-    background: orange
+
   &.infiniteloop
     background: url('/images/tnails/infiniteloop.jpg') center no-repeat
     background-size: cover
 
-  img
-    width: 100%
-    overflow: hidden
-    opacity: .5
+  &.sols
+    background: url('/images/tnails/sols.jpg') center no-repeat
+    background-size: cover
+
+  &.vestorly
+    background: url('/images/tnails/vestorlabs.jpg') center no-repeat
+    background-size: cover
+
+  &.wang
+    background: url('/images/tnails/wang.jpg') center no-repeat
+    background-size: cover
+
   a h1
-    margin-top: 180px
+    padding-top: 200px
     text-align: center
     font-size: 43px
     color: $white
     letter-spacing: .09em
+    cursor: pointer
+    &:hover
+      +transition(.4s)
 
+.project-tile
+  height: 100%
+  cursor: pointer
+
+.foot
+  padding: 150px 0 100px
+  text-align: center
+  margin: auto
+  h1
+    font-size: 30px
+    text-align: center
+    text-transform: none
+    letter-spacing: .02em
+  .btn
+    background: #414249
+    padding: 25px
+    border-radius: 2px
+    display: block
+    width: 300px
+    margin: auto
+    letter-spacing: 1px
+    font-weight: 600
+    margin-top: 30px
+    cursor: pointer
+    color: white
+    text-transform: uppercase
+    &:hover
+      background: black
+      +transition(.4s)
+  p
+    color: #8E8E8E
+    text-transform: uppercase
+    letter-spacing: .1em
+    font-weight: 500
+    font-size: 14px
+    text-align: center
+    margin: auto
+    line-height: 2.2em
 
 .pagination 
   clear: both
@@ -74,7 +128,9 @@
     display: inline-block
     font-size: 17px
     color: #818181
-    font-weight: 400
+    letter-spacing: .04em
+    font-weight: 600
+    text-transform: uppercase
   .previous
     float: left
   .next
@@ -84,17 +140,14 @@
   text-align: center
   margin: auto
   font-size: 15px
-  .item-info
-    border-top: 1px solid #D6D6D6
-    width: 100%
-    padding: 30px 0 0 0 
   img
-    margin: 0 auto 30px
+    margin: 20px auto 30px
     max-width: 100%
   .shadow
-    box-shadow: 0px 10px 30px #D6D6D6
-  .expand
-    padding: 0
+    box-shadow: 0px 10px 30px #C2C2C2
+
+.item-info
+  margin-top: 80px
   
 img.border
   border: 1px solid $ltgray
@@ -104,62 +157,65 @@ img.space
 
 .dash
   display: block 
+  position: relative
   width: 80px 
   border-top: 1px solid #ddd 
-  margin: 3em 0
+  margin: 50px auto !important
 
-.vestorly-bg
-  background: #414c6d
+.dash2
+  display: block 
+  position: relative
+  width: 80px 
+  border-top: 1px solid #ddd 
+  margin: 0 auto !important
+  text-align: center
+  padding-top: 200px
+
+.bg
   margin-bottom: 100px
+  padding: 100px 0
   img
-    padding: 160px
+    margin: 110px 0
 
+  &.allpaws
+    background: url("/images/allpaws/allpaws-bg.jpg")
+    background-size: cover
 
-@media (max-width: $screen-xs-max)
+  &.awright
+    background: url("/images/awright/gluten.jpg")
+    height: 550px
+    background-size: cover
+    margin-bottom: 100px
 
-  .projects.web
-    padding: 20px 13px
-  .container
-    padding: 20px
-    margin-top: 0
+  &.bitcoin
+    background: #0078b5
+
+  &.cosine
+    background: #2e374c
+
+  &.vestorlabs
+    background: #323a47
+  &.vestorly
+    background: #414c6d
+    margin-bottom: 100px
+
+  &.manus
+    background: rgb(231, 243, 249)
+
+  &.mountpenguin
+    background: url("/images/tcg/mp-bg.jpg")
+    background-size: cover
 
 @media (max-width: $screen-md)
   .video-frame
     background: 0
     padding: 0
 
-
 @media (max-width: $screen-sm)
   .video-frame
     display: none
-  .project-tile
-    margin-bottom: 20%
-
-.pagination 
-  border-top: 1px solid $ltgray
-  padding: 20px 13px 0 13px
-
-@media (max-width: 840px)
-  ul
-    &.projects,
-    &.web 
-      li
-        width: 45%
-        min-height: 480px
 
 @media (max-width: 570px)
-  ul
-    &.projects,
-    &.projects.web 
-      li 
-        width: 100%
-        margin: 0
-        min-height: 0
-  .item
-    padding-top: 0
-
-  header .container
-    padding: 0
 
   img.space
     margin-bottom: 30px
