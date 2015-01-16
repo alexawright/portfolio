@@ -1,9 +1,14 @@
 .item
+  .row.vestorly-bg
+    .col-md-12   
+      %img.load-img.img-responsive.shadowless{:src => "/images/vestorly/vestorly-logo-main.png"} 
+.item
   .row
     .col-md-12   
-      %img.load-img.img-responsive.space{:src => "/images/vestorly/vestorly-logo-main.png"} 
       %img.load-img.img-responsive.space.border{:src => "/images/vestorly/vestorly-1.jpg"} 
       %img.load-img.img-responsive.space.border{:src => "/images/vestorly/vestorly-2.jpg"} 
+
+.container
   .item-info 
     %h1
       VESTORLY
@@ -27,8 +32,8 @@
       %a{:href => "http://www.vestorly.com", :target => "_blank"} www.vestorly.com
 
 
-.pagination
-  %a.previous{:href => "/wanggrid"}
-    %h3 ← Previous 
-  %a.next{:href => "/chloeisabel"}
-    %h3 Next →
+  .pagination
+    %a.previous{:href => "/wanggrid"}
+      %h3 ← Previous 
+    %a.next{:href => "/chloeisabel"}
+      %h3 Next →

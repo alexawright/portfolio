@@ -15,54 +15,54 @@
 
 .project-tile-wrap 
   +make-xs-column(6)
-  +make-md-column(3)
-  +make-lg-column(4)
+  +make-md-column(6)
+  +make-lg-column(6)
   display: block
-  overflow: none
-  &.web img
-    border: 1px solid $ltgray
-    &:hover
-      border: 0
+  height: 430px
+  padding: 0
+  &.manus
+    background: yellow
+    background: url('/images/tnails/manus.jpg') center no-repeat
+    background-size: cover
+  &.cosine
+    background: orange
+  &.awright
+    background: url('/images/tnails/awright.jpg') center no-repeat
+    background-size: cover
+  &.allpaws
+    background: green
+    background: url('/images/tnails/allpaws.jpg') center no-repeat
+    background-size: cover
+  &.bitcoin
+    background: blue
+    background: url('/images/tnails/bitcoin.jpg') center no-repeat
+    background-size: cover
+  &.fox
+    background: url('/images/tnails/fox.jpg') center no-repeat
+    background-size: cover
 
-.project-tile 
-  display: block
-  margin-bottom: 30px 
-  text-align: center 
-  position: relative
-  margin-bottom: 10%
-  opacity: 0.93
-  &:hover 
-    cursor: pointer
-    opacity: 1.0
-    +transition(.3s)
-    .project-tile-overlay
-      +opacity(1)
-      h4,
-      p
-        +translate3d(0,0,0)
-
-  .project-tile-overlay
-    position: absolute 
-    top: 0 
-    left: 0 
-    right: 0
-    bottom: 0
-    +opacity(0)
-    +ease(all, .2s)
-    background: rgba($white, 1)
-    h4 
-      margin: 40% 0 10px
-      font-weight: 500
-      font-size: 25px
-    p 
-      margin: 10px 0
-    h4, p
-      +translate3d(0,20px,0)
-      +ease(-webkit-transform .2s)
+  &.sols
+    background: pink
+  &.vestorly
+    background: url('/images/tnails/vestorlabs.jpg') center no-repeat
+    background-size: cover
+  &.wang
+    background: orange
+  &.infiniteloop
+    background: url('/images/tnails/infiniteloop.jpg') center no-repeat
+    background-size: cover
 
   img
-    max-width: 100%
-    display: inline
+    width: 100%
+    overflow: hidden
+    opacity: .5
+  a h1
+    margin-top: 180px
+    text-align: center
+    font-size: 43px
+    color: $white
+    letter-spacing: .09em
+
 
 .pagination 
   clear: both
@@ -83,7 +83,6 @@
 .item
   text-align: center
   margin: auto
-  padding-top: 50px
   font-size: 15px
   .item-info
     border-top: 1px solid #D6D6D6
@@ -92,6 +91,8 @@
   img
     margin: 0 auto 30px
     max-width: 100%
+  .shadow
+    box-shadow: 0px 10px 30px #D6D6D6
   .expand
     padding: 0
   
@@ -106,6 +107,13 @@ img.space
   width: 80px 
   border-top: 1px solid #ddd 
   margin: 3em 0
+
+.vestorly-bg
+  background: #414c6d
+  margin-bottom: 100px
+  img
+    padding: 160px
+
 
 @media (max-width: $screen-xs-max)
 
