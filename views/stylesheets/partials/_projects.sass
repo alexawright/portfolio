@@ -21,9 +21,6 @@
   display: block
   height: 470px
   padding: 0
-  &.manus
-    background: url('/images/tnails/manus.jpg') center no-repeat
-    background-size: cover
 
   &.awright
     background: url('/images/tnails/awright.gif') center no-repeat
@@ -55,6 +52,10 @@
 
   &.infiniteloop
     background: url('/images/tnails/infiniteloop.jpg') center no-repeat
+    background-size: cover
+
+  &.manus
+    background: url('/images/tnails/manus.jpg') center no-repeat
     background-size: cover
 
   &.sols
@@ -167,47 +168,65 @@ img.space
   position: relative
   width: 80px 
   border-top: 1px solid #ddd 
-  margin: 0 auto !important
+  margin: 200px auto !important
   text-align: center
-  padding-top: 200px
 
 .bg
-  margin-bottom: 100px
-  padding: 100px 0
+  padding: 120px 0
   img
-    margin: 110px 0
-
+    margin: 90px 0
+  &.bottom-space
+    margin-bottom: 140px
   &.allpaws
     background: url("/images/allpaws/allpaws-bg.jpg")
     background-size: cover
 
   &.awright
-    background: url("/images/awright/gluten.jpg")
-    height: 550px
+    background: rgba(242, 242, 242, 0.84)
+    background: url("/images/awright/awright-bg.jpg")
     background-size: cover
-    margin-bottom: 100px
 
   &.bitcoin
     background: #0078b5
 
   &.cosine
     background: #2e374c
+  &.cosine2
+    background: white
+    border-bottom: 1px solid #ddd
+  &.cosine3
+    background: #445168
+  &.cosine4
+    background: #f2f8f9
 
-  &.vestorlabs
-    background: #323a47
-  &.vestorly
-    background: #414c6d
-    margin-bottom: 100px
+  &.infiniteloop1
+    background: #231f20
+    margin-bottom: 0 !important
+  &.infiniteloop2
+    background: url("/images/infinite-loop/loop-bg.jpg")
+    background-size: cover
 
   &.manus
     background: rgb(231, 243, 249)
 
   &.monkeybadger
     background: #e6e7e8
+  &.monkeybadger2
+    background: #F5F5F5
 
   &.mountpenguin
     background: url("/images/tcg/mp-bg.jpg")
     background-size: cover
+
+  &.sols
+    background: #e6e7e8
+    background: url("/images/sols/sols-bg.jpg")
+    background-size: cover
+
+  &.vestorlabs
+    background: #323a47
+  &.vestorly
+    background: #414c6d
 
 @media (max-width: $screen-md)
   .video-frame
