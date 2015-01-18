@@ -13,6 +13,13 @@
   height: 680px
   margin: auto
 
+.btn.more 
+  border: 2px solid gray
+  padding: 20px
+  width: 200px
+  color: black
+  background: red
+
 .project-tile-wrap 
   +make-xs-column(12)
   +make-md-column(6)
@@ -50,12 +57,23 @@
     background: url('/images/gifgasm/gifgasm.gif') center no-repeat
     background-size: cover
 
+  &.illustration
+    background: red
+    
   &.infiniteloop
     background: url('/images/tnails/infiniteloop.jpg') center no-repeat
     background-size: cover
 
+  &.logos
+    background: url('/images/tnails/cosine.jpg') center no-repeat
+    background-size: cover
+
   &.manus
     background: url('/images/tnails/manus.jpg') center no-repeat
+    background-size: cover
+
+  &.nikon
+    background: url('/images/tnails/nikon.jpg') center no-repeat
     background-size: cover
 
   &.sols
@@ -79,6 +97,68 @@
     cursor: pointer
     &:hover
       +transition(.4s)
+
+.bg
+  padding: 230px 0
+  img
+    margin: 90px 0
+  &.bottom-space
+    margin-bottom: 140px
+  &.allpaws
+    background: url("/images/allpaws/allpaws-bg.jpg")
+    background-size: cover
+
+  &.awright
+    background: rgba(242, 242, 242, 0.84)
+    background: url("/images/awright/awright-bg.jpg")
+    background-size: cover
+
+  &.bitcoin
+    background: #0078b5
+
+  &.cosine
+    background: #2e374c
+  &.cosine2
+    background: white
+    border-bottom: 1px solid #ddd
+  &.cosine3
+    background: #445168
+  &.cosine4
+    background: #f2f8f9
+
+  &.gifgasm
+    background: black
+  &.gifgasm2
+    border-bottom: 1px solid #ddd
+
+  &.infiniteloop1
+    background: #231f20
+  &.infiniteloop2
+    background: url("/images/infinite-loop/loop-bg.jpg")
+    background-size: cover
+
+  &.manus
+    background: rgb(231, 243, 249)
+
+  &.monkeybadger
+    background: #e6e7e8
+  &.monkeybadger2
+    background: #F5F5F5
+
+  &.mountpenguin
+    background: url("/images/tcg/mp-bg.jpg")
+    background-size: cover
+
+  &.sols
+    background: #e6e7e8
+    background: url("/images/sols/sols-bg.jpg")
+    background-size: cover
+
+  &.vestorlabs
+    background: #323a47
+  &.vestorly
+    background: #414c6d
+
 
 .project-tile
   height: 100%
@@ -171,62 +251,10 @@ img.space
   margin: 200px auto !important
   text-align: center
 
-.bg
-  padding: 120px 0
-  img
-    margin: 90px 0
-  &.bottom-space
-    margin-bottom: 140px
-  &.allpaws
-    background: url("/images/allpaws/allpaws-bg.jpg")
-    background-size: cover
-
-  &.awright
-    background: rgba(242, 242, 242, 0.84)
-    background: url("/images/awright/awright-bg.jpg")
-    background-size: cover
-
-  &.bitcoin
-    background: #0078b5
-
-  &.cosine
-    background: #2e374c
-  &.cosine2
-    background: white
-    border-bottom: 1px solid #ddd
-  &.cosine3
-    background: #445168
-  &.cosine4
-    background: #f2f8f9
-
-  &.infiniteloop1
-    background: #231f20
-    margin-bottom: 0 !important
-  &.infiniteloop2
-    background: url("/images/infinite-loop/loop-bg.jpg")
-    background-size: cover
-
-  &.manus
-    background: rgb(231, 243, 249)
-
-  &.monkeybadger
-    background: #e6e7e8
-  &.monkeybadger2
-    background: #F5F5F5
-
-  &.mountpenguin
-    background: url("/images/tcg/mp-bg.jpg")
-    background-size: cover
-
-  &.sols
-    background: #e6e7e8
-    background: url("/images/sols/sols-bg.jpg")
-    background-size: cover
-
-  &.vestorlabs
-    background: #323a47
-  &.vestorly
-    background: #414c6d
+.ul.social  
+  list-style: none
+  text-align: center
+  margin: 30px auto
 
 @media (max-width: $screen-md)
   .video-frame
