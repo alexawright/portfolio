@@ -1,7 +1,7 @@
 h1
   +font
   color: $black
-  margin: 16px 0px 16px
+  margin: 16px 0px 25px
   font-size: 28px
   font-weight: 600
   text-align: center
@@ -13,10 +13,11 @@ h1
 .item-info
   h2 a
     text-decoration: none
-    color: rgb(29, 29, 29)
-    letter-spacing: 1px
-    font-weight: 400
-    font-size: 25px
+    color: #6d6d6d
+    letter-spacing: .15em
+    font-weight: 500
+    font-size: 15px
+    text-transform: uppercase
     margin: auto
     text-align: center
     display: block
@@ -44,7 +45,7 @@ h4
 
 p
   +font
-  font-size: 21px
+  font-size: 18px
   color: #858585
   line-height: 1.9em
   +font
@@ -59,26 +60,28 @@ p
   
 ul.tags li
   color: #ACACAC
-  font-size: 16px
+  font-size: 14px
   font-weight: 600
   text-transform: uppercase
   line-height: 1.9em
   letter-spacing: .09em
   text-align: center
+  &:last-child
+    margin-bottom: 50px
   a 
     color: #818181
     border-bottom: none
     
 .ul.social  
   li
-    padding: 15px
+    padding: 5px
     display: inline-block
+    border: 2px solid #ddd
+    border-radius: 50%
   span 
     text-align: center
     font-size: 25px
-    padding: 10px 8px 10px 13px
-    background: #ddd
-    border-radius: 50%
+    padding: 15px
     width: 50px
     height: 50px
 

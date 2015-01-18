@@ -13,11 +13,19 @@
   height: 680px
   margin: auto
 
-.btn.more 
-  border: 2px solid $black
+.btn-more
+  border: 2px solid #ddd
   padding: 20px
-  background: red
   width: 200px
+  font-size: 13px
+  display: block
+  color: gray
+  font-weight: 600
+  margin: 70px auto
+  text-transform: uppercase
+  letter-spacing: .08em
+  span 
+    padding-left: 5px
 
 .project-tile-wrap 
   +make-xs-column(12)
@@ -99,10 +107,12 @@
 
 .bg
   padding: 230px 0
+
   img
     margin: 90px 0
   &.bottom-space
-    margin-bottom: 140px
+    margin-bottom: 120px
+
   &.allpaws
     background: url("/images/allpaws/allpaws-bg.jpg")
     background-size: cover
@@ -131,7 +141,7 @@
     background: #ddd
   &.dotbk3
     background: #f2f8f9
-  &.dotbkk
+  &.dotbk4
     background: #ddd
 
   &.gifgasm
@@ -162,6 +172,13 @@
     background: url("/images/sols/sols-bg.jpg")
     background-size: cover
 
+  &.torii
+    background: #e6e7e8
+    background: url("/images/torii/torii-bg.jpg")
+    background-size: cover
+  &.torii2
+    background: #f9faff
+
   &.vestorlabs
     background: #323a47
   &.vestorly
@@ -186,9 +203,10 @@
     padding: 25px
     border-radius: 2px
     display: block
+    font-size: 14px
     width: 300px
     margin: auto
-    letter-spacing: 1px
+    letter-spacing: .1em
     font-weight: 600
     margin-top: 30px
     cursor: pointer

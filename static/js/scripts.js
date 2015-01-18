@@ -24,7 +24,7 @@
       var navItem;
       navItem = $(".nav li");
       $(".nav li").removeClass("active");
-      if (window.location.pathname === "/graphics") {
+      if (window.location.pathname === "/work") {
         navItem.eq(0).addClass("active");
       }
       if (window.location.pathname === "/") {
