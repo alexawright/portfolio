@@ -6,7 +6,7 @@ p
   margin: auto
   margin-bottom: 35px
   text-decoration: none
-  width: 700px
+  max-width: 700px
   color: #858585
   a 
     color: black
@@ -83,6 +83,49 @@ ul.tags li
     width: 50px
     height: 50px
 
+.project-tile-wrap
+  a h1
+    padding-top: 200px
+    text-align: center
+    font-size: 43px
+    color: $white
+    letter-spacing: .09em
+    cursor: pointer
+    &:hover
+      +transition(.4s)
+
+.about
+  padding-top: 20px
+  a 
+    color: black
+    border-bottom: 1px dotted #ccc
+  p
+    font-size: 22px
+    color: #858585
+    line-height: 1.9em
+    +font
+  h1 
+    font-size: 28px
+    letter-spacing: .08em
+    color: #777777
+
+.foot
+  padding: 150px 0 100px
+  h1
+    font-size: 30px
+    text-align: center
+    text-transform: none
+    letter-spacing: .02em
+  p
+    color: #8E8E8E
+    text-transform: uppercase
+    letter-spacing: .1em
+    font-weight: 500
+    font-size: 14px
+    text-align: center
+    margin: auto
+    line-height: 2.2em
+
 \::selection
   background: $ltgray
   color: $white
@@ -92,3 +135,16 @@ ul.tags li
 .item h1
   font-size: 25px
 
+@media (max-width: 670px)
+  
+  .about
+    padding: 100px
+  .about p
+    font-size: 22px
+
+@media (max-width: $screen-xs-max)
+
+  .about
+    padding: 0 30px
+    p
+      font-size: 17px

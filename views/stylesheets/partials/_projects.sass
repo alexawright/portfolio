@@ -9,9 +9,7 @@
   +make-md-column(6)
   +make-lg-column(6)
   cursor: pointer
-  display: block
   height: 470px
-  padding: 0
 
   &.awright
     background: url('/images/tnails/awright.gif') center no-repeat
@@ -71,16 +69,6 @@
   &.wang
     background: url('/images/tnails/wang.jpg') center no-repeat
     background-size: cover
-
-  a h1
-    padding-top: 200px
-    text-align: center
-    font-size: 43px
-    color: $white
-    letter-spacing: .09em
-    cursor: pointer
-    &:hover
-      +transition(.4s)
 
 .bg
   padding: 230px 0
@@ -159,70 +147,47 @@
   &.vestorly
     background: #414c6d
 
-.project-tile
-  cursor: pointer
-
-.video-frame
-  padding: 57px 125px 57px 142px
-  background-image: url(/images/ipad-frame.png)
-  background-repeat: none
-  background-size: 100%
-  display: inline-block
-  height: 680px
-  margin: auto
-
-.btn-more
-  border: 2px solid #ddd
-  padding: 20px
-  width: 200px
-  font-size: 13px
-  display: block
-  color: gray
-  font-weight: 600
-  margin: 70px auto
+.btn 
+  border-radius: 2px
   text-transform: uppercase
-  letter-spacing: .08em
-  span 
-    padding-left: 5px
-
-
-.foot
-  padding: 150px 0 100px
   text-align: center
-  margin: auto
-  h1
-    font-size: 30px
-    text-align: center
-    text-transform: none
-    letter-spacing: .02em
-  .btn
+  font-weight: 600
+  letter-spacing: .08em
+  font-size: 14px
+  cursor: pointer
+  padding: 24px
+  margin: 50px auto
+  &.contact1
+    border: 2px solid $ltgray
+    width: 240px
+    margin-right: 14px
+    color: gray
+    display: inline-block
+    &:hover
+      background: $ltgray
+      +transition(.4s)
+  &.contact2
     background: #414249
-    padding: 25px
-    border-radius: 2px
-    display: block
-    font-size: 14px
-    width: 280px
-    margin: auto
-    letter-spacing: .1em
-    font-weight: 600
-    margin-top: 30px
-    cursor: pointer
+    margin-left: 14px
+    width: 240px
+    display: inline-block
     color: white
-    text-transform: uppercase
     &:hover
       background: black
       +transition(.4s)
-  p
-    color: #8E8E8E
-    text-transform: uppercase
-    letter-spacing: .1em
-    font-weight: 500
-    font-size: 14px
-    text-align: center
-    margin: auto
-    line-height: 2.2em
+  &.more
+    border: 2px solid #ddd
+    width: 200px
+    display: block
+    span 
+      padding-left: 5px
 
-.full-width-block, .bottom-space
+.btn-group
+  margin: auto
+  display: block
+  text-align: center
+
+.full-width-block
   margin-bottom: 120px
   text-align: center
   img 
@@ -245,9 +210,9 @@
       margin-bottom: 0
 
 .info
-  margin: 120px 0 100px
+  margin: 20px 0 100px
 
-.dash2
+.dash
   display: block 
   position: relative
   width: 80px 
@@ -259,6 +224,15 @@
   list-style: none
   text-align: center
   margin: 30px auto
+
+.video-frame
+  padding: 57px 125px 57px 142px
+  background-image: url(/images/ipad-frame.png)
+  background-repeat: none
+  background-size: 100%
+  display: inline-block
+  height: 680px
+  margin: auto
 
 @media (max-width: $screen-md)
   .video-frame
