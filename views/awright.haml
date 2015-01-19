@@ -1,72 +1,36 @@
-.item
-  .row.bg.awright.bottom-space
-    .col-md-12   
+.full-width-block
+  .row
+    .col-md-12.bg.awright   
       %img.load-img.img-responsive{:src => "/images/awright/awright-logo.png"} 
 
-.container
-  .item
-    .row
+.project-body
+    
+  = haml :cubedeco
 
-      .col-md-12   
-        %img.load-img.img-responsive.space{:src => "/images/awright/cubedeco-2.jpg"} 
-      .col-md-12   
-        %img.load-img.img-responsive.space{:src => "/images/awright/cubedeco.jpg"} 
+  .dash2
 
-        .dash2 
+  = haml :graphicpillow
 
-      .col-md-12   
-        %img.load-img.img-responsive.space{:src => "/images/awright/pillow-3.jpg"} 
-      .col-md-12   
-        %img.load-img.img-responsive.space{:src => "/images/awright/pillow-2.jpg"} 
-      .col-md-12   
-        %img.load-img.img-responsive.space{:src => "/images/awright/pillow-1.jpg"}
+  .dash2  
 
-        .dash2  
+  = haml :blackwhitegraphics
 
-        %img.load-img.img-responsive.space{:src => "/images/awright/chevron.jpg"} 
-        %img.load-img.img-responsive.space{:src => "/images/awright/steps.jpg"} 
-        
-        .dash2
+  .dash2
 
-    .row 
-      .col-sm-6
-        %img.load-img.img-responsive{:src => "/images/patchwork/patchwork-1.jpg"} 
-      .col-sm-6
-        %img.load-img.img-responsive{:src => "/images/patchwork/patchwork-2.jpg"} 
-    .row
-      .col-sm-4
-        %img.load-img.border.img-responsive{:src => "/images/patchwork/patchwork-d2.jpg"} 
-      .col-sm-4
-        %img.load-img.border.img-responsive{:src => "/images/patchwork/patchwork-d3.jpg"} 
-      .col-sm-4
-        %img.load-img.border.img-responsive{:src => "/images/patchwork/patchwork-d1.jpg"} 
+  = haml :patchwork
 
-    .dash2
+  .dash2
 
-    .row
-      .col-md-12
-        %img.load-img.img-responsive.space{:src => "/images/awright/azteco-2.jpg"} 
-        %img.load-img.img-responsive.space{:src => "/images/awright/azteco.jpg"}  
+  = haml :sweater
 
-    / .row
-    /   %img.load-img.img-responsive.space{:src => "/images/awright/paint.jpg"} 
+  .dash2
 
-    /     .dash2 
+  = haml :azteco
 
-    /   .col-md-12   
-    /     %img.load-img.img-responsive.space{:src => "/images/awright/gluten.jpg"} 
-
-    /     .dash2
-
-    /   .col-md-12
-    /     %img.load-img.img-responsive.space{:src => "/images/awright/lamle.jpg"} 
-    /     %img.load-img.img-responsive.space{:src => "/images/awright/alexa.jpg"} 
-    /     %img.load-img.img-responsive.space{:src => "/images/awright/amiko.jpg"} 
-
-.item-info
-  %h1 Alexa Wright
-  %p All items are hand-crafted.
-  %ul.tags
-    %li Fine Art
-    %li Fashion + Home Goods Design
-    %li Draping + Patternmaking + Sewing
+  .info
+    %h1 Alexa Wright
+    %p All items are hand-crafted.
+    %ul.tags
+      %li Fine Art
+      %li Fashion + Home Goods Design
+      %li Draping + Patternmaking + Sewing

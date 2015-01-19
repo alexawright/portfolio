@@ -4,29 +4,6 @@
   &.loaded
     +opacity(1)
 
-.video-frame
-  padding: 57px 125px 57px 142px
-  background-image: url(/images/ipad-frame.png)
-  background-repeat: none
-  background-size: 100%
-  display: inline-block
-  height: 680px
-  margin: auto
-
-.btn-more
-  border: 2px solid #ddd
-  padding: 20px
-  width: 200px
-  font-size: 13px
-  display: block
-  color: gray
-  font-weight: 600
-  margin: 70px auto
-  text-transform: uppercase
-  letter-spacing: .08em
-  span 
-    padding-left: 5px
-
 .project-tile-wrap 
   +make-xs-column(12)
   +make-md-column(6)
@@ -110,8 +87,6 @@
 
   img
     margin: 90px 0
-  &.bottom-space
-    margin-bottom: 120px
 
   &.allpaws
     background: url("/images/allpaws/allpaws-bg.jpg")
@@ -184,10 +159,32 @@
   &.vestorly
     background: #414c6d
 
-
 .project-tile
-  height: 100%
   cursor: pointer
+
+.video-frame
+  padding: 57px 125px 57px 142px
+  background-image: url(/images/ipad-frame.png)
+  background-repeat: none
+  background-size: 100%
+  display: inline-block
+  height: 680px
+  margin: auto
+
+.btn-more
+  border: 2px solid #ddd
+  padding: 20px
+  width: 200px
+  font-size: 13px
+  display: block
+  color: gray
+  font-weight: 600
+  margin: 70px auto
+  text-transform: uppercase
+  letter-spacing: .08em
+  span 
+    padding-left: 5px
+
 
 .foot
   padding: 150px 0 100px
@@ -204,7 +201,7 @@
     border-radius: 2px
     display: block
     font-size: 14px
-    width: 300px
+    width: 280px
     margin: auto
     letter-spacing: .1em
     font-weight: 600
@@ -225,49 +222,30 @@
     margin: auto
     line-height: 2.2em
 
-.pagination 
-  clear: both
-  margin-top: 43px
-  margin: 43px 0 0 0
-  border-top: 1px solid $ltgray
-  padding: 20px 0 0 0
-  h3
-    display: inline-block
-    font-size: 17px
-    color: #818181
-    letter-spacing: .04em
-    font-weight: 600
-    text-transform: uppercase
-  .previous
-    float: left
-  .next
-    float: right
+.full-width-block, .bottom-space
+  margin-bottom: 120px
+  text-align: center
+  img 
+    margin: auto
+    display: block
+    text-align: center
 
-.item
+.project-body
   text-align: center
   margin: auto
-  font-size: 15px
   img
-    margin: 20px auto 30px
     max-width: 100%
-  .shadow
-    box-shadow: 0px 10px 30px #C2C2C2
+    &.border 
+      border: 1px solid $ltgray
+    &.shadow
+      box-shadow: 0px 10px 30px #C2C2C2
+  .row
+    margin-bottom: 150px
+    &:last-child
+      margin-bottom: 0
 
-.item-info
-  margin-top: 80px
-  
-img.border
-  border: 1px solid $ltgray
-
-img.space
-  margin-bottom: 130px
-
-.dash
-  display: block 
-  position: relative
-  width: 80px 
-  border-top: 1px solid #ddd 
-  margin: 50px auto !important
+.info
+  margin: 120px 0 100px
 
 .dash2
   display: block 
