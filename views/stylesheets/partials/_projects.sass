@@ -98,14 +98,13 @@
   &.cosine4
     background: #f2f8f9
 
-  &.dotbk1
-    background: #f2f8f9
+  &.dotbk1, 
+  &.dotbk4
+    background: #404041
   &.dotbk2
-    background: #ddd
+    background: #fffcf3
   &.dotbk3
     background: #f2f8f9
-  &.dotbk4
-    background: #ddd
 
   &.gifgasm
     background: black
@@ -155,37 +154,44 @@
   letter-spacing: .08em
   font-size: 14px
   cursor: pointer
-  padding: 24px
+  padding: 21px
   margin: 50px auto
   &.contact1
-    border: 2px solid $ltgray
+    border: 2px solid #f4c3e4
     width: 240px
     margin-right: 14px
-    color: gray
+    color: #d14eac
     display: inline-block
+    +transition(.4s)
     &:hover
-      background: $ltgray
-      +transition(.4s)
+      color: #c453a4
+      border: 2px solid #f272c7
   &.contact2
-    background: #414249
+    background: #cc4093
     margin-left: 14px
     width: 240px
     display: inline-block
     color: white
     &:hover
-      background: black
+      background: #bf4091
       +transition(.4s)
   &.more
     border: 2px solid #ddd
     width: 200px
+    color: #515151
     display: block
     span 
       padding-left: 5px
+    &:hover
+      border: 2px solid #bfbfbf
+      +transition(.4s)
 
 .btn-group
   margin: auto
   display: block
   text-align: center
+  span
+    color: #b23887
 
 .full-width-block
   margin-bottom: 120px
@@ -206,6 +212,8 @@
       box-shadow: 0px 10px 30px #C2C2C2
   .row
     margin-bottom: 150px
+    &.wang
+      margin-bottom: 27px
     &:last-child
       margin-bottom: 0
 
@@ -217,13 +225,8 @@
   position: relative
   width: 80px 
   border-top: 1px solid #ddd 
-  margin: 200px auto !important
+  margin: 50px auto 180px !important
   text-align: center
-
-.ul.social  
-  list-style: none
-  text-align: center
-  margin: 30px auto
 
 .video-frame
   padding: 57px 125px 57px 142px
