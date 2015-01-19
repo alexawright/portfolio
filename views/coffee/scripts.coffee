@@ -14,3 +14,16 @@ $ ->
   ).each ->
     if @complete
       $(@).load()
+
+$ ->
+  console.log("DOM is ready")
+
+  $(document).on "click", ".button2", ->
+  console.log("delegated button click!")
+
+  div.animate {width: 200}, 2000
+
+  div.animate
+    width: 200
+    height: 200
+    2000
