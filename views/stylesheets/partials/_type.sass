@@ -76,14 +76,31 @@ ul.tags li
   li
     padding: 5px
     display: inline-block
-    border-radius: 50%
-    border: 2px solid #f4c3e4
-    width: 30px
     height: 30px
-    padding: 25px
+    border-radius: 50%
+    width: 30px
+    background: $ltgray
+    padding: 30px
+    background-position: center
+    +transition(5s ease-in-out)
+    &:first-child:hover 
+      background-image: url("https://31.media.tumblr.com/7af26fce2a5aa17c6e5c36fe9778ecfd/tumblr_nf2wfyOdtH1sg7jo9o1_500.gif")
+      background-position: center
+    &:nth-child(2):hover
+      background-image: url("https://38.media.tumblr.com/8b596ba07d07e655d18279707072863d/tumblr_n6mb7g674C1skardgo1_500.gif")
+      background-position: center
+    &:nth-child(3):hover
+      background-image: url("https://38.media.tumblr.com/1be6004561cbc8c0eaf279799c55e632/tumblr_n5lfvgwVB81rsadwno1_500.gif")
+      background-position: center
+    &:nth-child(4):hover
+      background-image: url("https://33.media.tumblr.com/f5ae9800effe980eb0f8c87ff8741355/tumblr_ng5n8nShy21rrhg8ro1_500.gif")
+      background-position: center
+    &:nth-child(5):hover
+      background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
+      background-position: center
   span 
     font-size: 25px
-    color: #d14eac
+    color: white
 
 .project-tile-wrap
   a h1
