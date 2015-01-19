@@ -5,24 +5,28 @@
   .row.bg.gifgasm2
     .col-md-12   
       %img.load-img.img-responsive{:src => "/images/gifgasm/loading.gif"}  
-
-.container.project-body
   .row
     .col-md-12   
-      %iframe.video{:allowfullscreen => "", :frameborder => "0", :height => "700", :mozallowfullscreen => "", :src => "//player.vimeo.com/video/78756378?byline=0&amp;portrait=0&amp;autoplay=1", :webkitallowfullscreen => "", :width => "1050"}
+      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "740", :mozallowfullscreen => "", :src => "//player.vimeo.com/video/78756378?byline=0&amp;portrait=0&amp;autoplay=0", :webkitallowfullscreen => "", :width => "100%"}
 
-  .info 
-    %h1
-      Gifgasm, an Infinite Loop Experiment
-    %p 
-      I worked with Ryan Rogalski and Charlie Schwabacher to create Gifgasm, a modern search engine for tumblr gifs. You can search for keywords and instantly see all recent tumblr posts with that tag. You can also view a specific tumblr by entering 
-      %a{:href => "http://www.gifgasm.me/blog:30000fps", :target => "_blank"} 
-        blog:tumblrname. 
-      %a{:href => "http://www.producthunt.com/posts/gifgasm", :target => "_blank"}
-        Product Hunt 
-      and 
+.container.info
+  %h1
+    Gifgasm, an Infinite Loop Experiment
+  %p 
+    I worked with Ryan Rogalski and Charlie Schwabacher to create Gifgasm, a modern search engine for tumblr gifs. You can search for keywords and instantly see all recent tumblr posts with that tag. You can also view a specific tumblr by entering 
+    %a{:href => "http://www.gifgasm.me/blog:30000fps", :target => "_blank"} 
+      blog:tumblrname. 
+  %p
+    Featured on
+    %a{:href => "http://www.producthunt.com/posts/gifgasm", :target => "_blank"}
+      Product Hunt 
+    and 
+    %a{:href => "http://www.producthunt.com/posts/gifgasm", :target => "_blank"}
       Designer News.
-    %ul.tags
-      %li Logo Design
-    %h2 
-      %a{:href => "http://www.gifgasm.me", :target => "_blank"} www.gifgasm.me
+    Featured gif by 
+    %a{:href => "http://30000fps.tumblr.com", :target => "_blank"}
+      30000fps.
+  %ul.tags
+    %li Logo Design
+  %h2 
+    %a{:href => "http://www.gifgasm.me", :target => "_blank"} www.gifgasm.me
