@@ -15,15 +15,14 @@ $ ->
     if @complete
       $(@).load()
 
-$ ->
-  console.log("DOM is ready")
+  # images = [
+  #   "http://33.media.tumblr.com/1a426c7f7db34f40ac9cde0c77255249/tumblr_nic4edkOrS1qcvus4o1_500.gif" 
+  #   "https://38.media.tumblr.com/c32ed7425180add1f42440f71ea551ee/tumblr_nezmo3KAVz1raz27ko1_500.gif" 
+  #   "https://38.media.tumblr.com/d1a4d8ba7d6a2f474de069a78377b4c4/tumblr_n914h3PRwl1rodxovo2_1280.gif"
+  # ]
 
-  $(document).on "click", ".button2", ->
-  console.log("delegated button click!")
+  # $outside = $(".circle-outside")
 
-  div.animate {width: 200}, 2000
-
-  div.animate
-    width: 200
-    height: 200
-    2000
+  # for circle in $outside 
+  #   for img in images
+      

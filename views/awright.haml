@@ -36,9 +36,12 @@
       %li Draping + Patternmaking + Sewing
 
   .pagination
-    .previous
-      %span Previous 
-      %span.fa.fa-angle-right
-    .next
-      %span.fa.fa-angle-left 
-      %span Next
+    .inner
+      %a{:href => "http://alexa-wright.tumblr.com", :target => "_blank"} 
+        .previous
+          %span.fa.fa-angle-right
+      .next
+        %span.fa.fa-angle-left 
+
+  = haml :work
+

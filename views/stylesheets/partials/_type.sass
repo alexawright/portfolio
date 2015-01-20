@@ -1,13 +1,13 @@
 p
   +font
-  font-size: 18px
+  font-size: 17px
   line-height: 1.9em
-  text-align: center
   margin: auto
   margin-bottom: 35px
   text-decoration: none
   max-width: 700px
   color: #858585
+  text-align: center
   a 
     color: black
     border-bottom: 1px dotted #ccc
@@ -23,6 +23,19 @@ h1
   text-align: center
   text-decoration: none
   text-transform: uppercase
+
+
+.project-tile-wrap
+  a h1
+    padding-top: 200px
+    text-align: center
+    font-size: 38px
+    color: $white
+    letter-spacing: .12em
+    cursor: pointer
+    &:hover
+      +transition(.4s)
+
 
 .info h2 a
   text-decoration: none
@@ -71,8 +84,9 @@ ul.tags li
     border-bottom: none
     
 .ul.social  
-  margin: auto
+  margin: 40px auto
   text-align: center
+  display: block
   li
     padding: 5px
     display: inline-block
@@ -101,17 +115,6 @@ ul.tags li
   span 
     font-size: 25px
     color: white
-
-.project-tile-wrap
-  a h1
-    padding-top: 200px
-    text-align: center
-    font-size: 43px
-    color: $white
-    letter-spacing: .09em
-    cursor: pointer
-    &:hover
-      +transition(.4s)
 
 .about
   padding-top: 20px
@@ -146,31 +149,37 @@ ul.tags li
     line-height: 2.2em
 
 .pagination
-  margin: auto 0 10px
-  padding: 30px
-  border-top: 1px solid $ltgray
+  margin: auto 0 20px
+  text-align: center
+  .inner
+    width: 150px
+    margin: auto
+    text-align: center
 
   span
-    color: $mdgray
+    color: #969696
     font-weight: 600
     line-height: 1em
     font-size: 13px
     text-transform: uppercase
     letter-spacing: .05em
   span.fa 
-    font-size: 30px
-    color: $ltgray
+    color: #969696
+    border: 2px solid $ltgray
+    padding: 20px
+    margin-bottom: 50px
 
   .previous
     float: right
     span.fa 
       margin-left: 10px
+      font-size: 40px
 
   .next
     float: left
     span.fa 
       margin-right: 10px
-      font-size: 20px
+      font-size: 40px
 
 \::selection
   background: $ltgray
