@@ -263,7 +263,6 @@ $images: "https://38.media.tumblr.com/c32ed7425180add1f42440f71ea551ee/tumblr_ne
   display: inline-block
   height: 685px
   margin: 5px
-  // border-radius: 50%
   width: 100%
   background-size: cover
   background-position: center
@@ -271,9 +270,6 @@ $images: "https://38.media.tumblr.com/c32ed7425180add1f42440f71ea551ee/tumblr_ne
   background-repeat: no-repeat
 
 .col-sm-6   
-  // border-radius: 50%
-  // +animation(spin 80s infinite)
-
   @for $i from 1 through length($images) 
     $img: nth($images, $i)
 
@@ -289,17 +285,12 @@ $images: "https://38.media.tumblr.com/c32ed7425180add1f42440f71ea551ee/tumblr_ne
   background-position: center center
   background-size: cover
   background-repeat: no-repeat
-  // border-radius: 50%
   position: absolute
   top: 0
   left: 0
   right: 0
   bottom: 0
 
-
 .glitter
   text-align: center
   padding: 5px
-  // background: #ff5f6b
-  // +background("https://38.media.tumblr.com/f5e8985c12dc206f93b7fb1a27685c9a/tumblr_nc257qy1aO1tjryj4o1_500.gif")
-  // background-size: cover
