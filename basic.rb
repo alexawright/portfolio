@@ -12,6 +12,7 @@ set :root, File.dirname(__FILE__)
 set :views, "views"
 set :public, 'static'
 
+
 configure do
   Compass.add_project_configuration(File.join(Sinatra::Application.root, 'config', 'compass.config'))
 end
@@ -24,6 +25,20 @@ end
 
 get '/coffee/:name.js' do
   coffee :"coffee/#{params[:name]}"  
+end
+
+def logos
+  [
+    "cosinegroup",
+    "mountpenguin",
+    "monkeybadger",
+    "infiniteloop",
+    "solslogo",
+    "gifgasmlogo",
+    "vestorlabslogo",
+    "toriilogo",
+    "dotbk"
+  ]
 end
 
 get '/' do

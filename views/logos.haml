@@ -1,37 +1,7 @@
 .logos
 
   %h4 Logos
-
-  = haml :cosinegroup
-
-  .dash
-
-  = haml :mountpenguin
-
-  .dash
-
-  = haml :monkeybadger
-
-  .dash
-
-  = haml :infinitelooplogo
-
-  .dash
-
-  = haml :solslogo
-
-  .dash
-
-  = haml :gifgasmlogo
-
-  .dash
-
-  = haml :vestorlabslogo
-
-  .dash
   
-  = haml :toriilogo
-
-  .dash
-
-  = haml :dotbk
+  - logos.each do |logo|
+    = haml :"#{logo}"
+    .dash
