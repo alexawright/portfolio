@@ -1,7 +1,8 @@
 .logos
 
   %h4 Logos
-  
-  - logos.each do |logo|
-    = haml :"#{logo}"
+
+  - @logos.each_with_index do |logo, index|
+    = haml :"#{logo}"    
     .dash
+      

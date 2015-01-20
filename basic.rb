@@ -27,8 +27,13 @@ get '/coffee/:name.js' do
   coffee :"coffee/#{params[:name]}"  
 end
 
-def logos
-  [
+get '/' do
+  haml :graphics, :layout => !request.xhr? 
+end
+
+get '/:name' do
+  @route = "#{params[:name]}"
+  @logos = [
     "cosinegroup",
     "mountpenguin",
     "monkeybadger",
@@ -39,14 +44,6 @@ def logos
     "toriilogo",
     "dotbk"
   ]
-end
-
-get '/' do
-  haml :graphics, :layout => !request.xhr? 
-end
-
-get '/:name' do
-  @route = "#{params[:name]}"
   haml :"#{params[:name]}", :layout => !request.xhr? 
 end
 
