@@ -1,8 +1,34 @@
 .container.project-body
   %h4 Illustration
 
+  = haml :solssill
+
+  .dash
+
+  = haml :vestill
+
+  .dash
+
+
+  = haml :johnfischer
+
+  .dash
+
   = haml :toastgame
 
   .dash
 
   = haml :misterux
+
+  .dash
+      
+.pagination
+  .inner
+    %a{:href => "/awright"} 
+      .previous
+        %span.fa.fa-angle-right
+    %a{:href => "/gifgasm"} 
+      .next
+        %span.fa.fa-angle-left 
+
+= haml :work
