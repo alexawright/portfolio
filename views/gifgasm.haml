@@ -3,8 +3,9 @@
     .col-md-12   
       %img.load-img.img-responsive{:src => "/images/gifgasm/gifgasm-logo.gif"}  
   .row.bg.gifgasm2
-    .col-md-12   
-      %img.load-img.img-responsive{:src => "/images/gifgasm/loading.gif"}  
+    %a{:name => "more"} 
+      .col-md-12   
+        %img.load-img.img-responsive{:src => "/images/gifgasm/loading.gif"}  
   
 
 .container.project-body
@@ -29,7 +30,17 @@
       Cover .gif by 
       %a{:href => "http://30000fps.tumblr.com", :target => "_blank"}
         30000fps.
-    %ul.tags
-      %li Logo Design
     %h2 
       %a{:href => "http://www.gifgasm.me", :target => "_blank"} www.gifgasm.me
+
+      
+.pagination
+  .inner
+    %a{:href => "/awright"} 
+      .previous
+        %span.fa.fa-angle-right
+    %a{:href => "/gifgasm"} 
+      .next
+        %span.fa.fa-angle-left 
+
+= haml :work

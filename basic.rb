@@ -36,12 +36,12 @@ get '/:name' do
   @logos = [
     "cosinegroup",
     "mountpenguin",
-    "monkeybadger",
-    "infiniteloop",
-    "solslogo",
+    "infinitelooplogo",
     "gifgasmlogo",
+    "solslogo",
     "vestorlabslogo",
     "toriilogo",
+    "monkeybadger",
     "dotbk"
   ]
   haml :"#{params[:name]}", :layout => !request.xhr? 
