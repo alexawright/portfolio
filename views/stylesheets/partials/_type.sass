@@ -15,9 +15,9 @@ p
 h1
   +font
   color: $black
-  font-size: 28px
+  font-size: 25px
   font-weight: 600
-  letter-spacing: 2px
+  letter-spacing: .1em
   line-height: 1.6em
   margin: 16px 0px 25px
   text-align: center
@@ -87,14 +87,16 @@ ul.tags li
   margin: 40px auto
   text-align: center
   display: block
+  padding: 10px
   li
     padding: 5px
     display: inline-block
     height: 30px
-    border-radius: 50%
+    border-radius: 2px
     width: 30px
-    background: $ltgray
     padding: 30px
+    border: 1px solid $ltgray
+    color: $ltgray
     background-position: center
     +transition(5s ease-in-out)
     &:first-child:hover 
