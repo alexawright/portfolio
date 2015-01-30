@@ -1,16 +1,31 @@
 .logos
 
   %h4 Logos
-
-  - @logos.each_with_index do |logo, index|
-    = haml :"#{logo}"    
-      
+  
+  = haml :cosinegroup
+  .dash
+  = haml :mountpenguin
+  .dash
+  = haml :infinitelooplogo
+  .dash
+  = haml :gifgasmlogo
+  .dash
+  = haml :solslogo
+  .dash
+  = haml :vestorlabslogo
+  .dash
+  = haml :monkeybadger
+  .dash
+  = haml :toriilogo
+  .dash
+  = haml :dotbk
+  
 .pagination
   .inner
-    %a{:href => "/awright"} 
+    %a{:href => "/vestorly"} 
       .previous
         %span.fa.fa-angle-right
-    %a{:href => "/gifgasm"} 
+    %a{:href => "/illustration"} 
       .next
         %span.fa.fa-angle-left 
 

@@ -24,6 +24,9 @@ h1
   text-decoration: none
   text-transform: uppercase
 
+.footer p
+  font-size: 14px !important
+  padding: 100px 0 0 0
 
 .project-tile-wrap
   a h1
@@ -84,34 +87,36 @@ ul.tags li
     border-bottom: none
     
 .ul.social  
-  margin: 40px auto
+  margin: 80px auto
   text-align: center
   display: block
   padding: 10px
+  
   li
     padding: 5px
     display: inline-block
     height: 30px
-    border-radius: 2px
+    margin-right: 10px
+    border-radius: 50%
     width: 30px
     padding: 30px
     border: 1px solid $ltgray
     color: $ltgray
     background-position: center
     +transition(5s ease-in-out)
-    &:first-child:hover 
-      background-image: url("https://31.media.tumblr.com/7af26fce2a5aa17c6e5c36fe9778ecfd/tumblr_nf2wfyOdtH1sg7jo9o1_500.gif")
+    &:first-child 
+      background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
       background-position: center
-    &:nth-child(2):hover
-      background-image: url("https://38.media.tumblr.com/8b596ba07d07e655d18279707072863d/tumblr_n6mb7g674C1skardgo1_500.gif")
+    &:nth-child(2)
+      background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
       background-position: center
-    &:nth-child(3):hover
-      background-image: url("https://38.media.tumblr.com/1be6004561cbc8c0eaf279799c55e632/tumblr_n5lfvgwVB81rsadwno1_500.gif")
+    &:nth-child(3)
+      background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
       background-position: center
-    &:nth-child(4):hover
-      background-image: url("https://33.media.tumblr.com/f5ae9800effe980eb0f8c87ff8741355/tumblr_ng5n8nShy21rrhg8ro1_500.gif")
+    &:nth-child(4)
+      background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
       background-position: center
-    &:nth-child(5):hover
+    &:nth-child(5)
       background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
       background-position: center
   span 
@@ -124,7 +129,7 @@ ul.tags li
     color: black
     border-bottom: 1px dotted #ccc
   p
-    font-size: 22px
+    font-size: 20px
     color: #858585
     line-height: 1.9em
     +font
@@ -174,13 +179,11 @@ ul.tags li
   .previous
     float: right
     span.fa 
-      margin-left: 10px
       font-size: 40px
 
   .next
     float: left
     span.fa 
-      margin-right: 10px
       font-size: 40px
 
 \::selection

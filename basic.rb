@@ -33,17 +33,6 @@ end
 
 get '/:name' do
   @route = "#{params[:name]}"
-  @logos = [
-    "cosinegroup",
-    "mountpenguin",
-    "infinitelooplogo",
-    "gifgasmlogo",
-    "solslogo",
-    "vestorlabslogo",
-    "toriilogo",
-    "monkeybadger",
-    "dotbk"
-  ]
   haml :"#{params[:name]}", :layout => !request.xhr? 
 end
 
