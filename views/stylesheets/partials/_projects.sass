@@ -281,17 +281,18 @@
   width: 1150px
   height: 780px
 
-@media (max-width: $screen-xs-max)
-  .img-responsive
-    width: 100%
-    padding: 0 30px
+@media (max-width: $screen-xs)
 
+  .img-responsive
+    margin: 0 15px
 
   .project-tile-wrap
     height: 300px
 
   .full-width-block
     margin-bottom: 40px
+    img
+      width: 100%
 
   .bg
     padding: 20px 0
@@ -303,15 +304,25 @@
     margin: 0px auto 105px !important
 
   .btn 
-    width: 200px !important
     padding: 21px
     margin: 50px auto
     &.contact1
       margin: 40px 0 0
+      width: 200px !important
     &.contact2
       background: #f9626d
       margin: 20px 0 0
+      width: 200px !important
+    &.more
+      width: 120px
 
+  .info
+    margin: 20px 0 50px
+    padding: 0 10px
+
+  .project-body
+    .row
+      margin-bottom: 28px
 
 @media (max-width: $screen-md)
   .video-frame
