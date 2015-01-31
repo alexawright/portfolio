@@ -92,41 +92,23 @@ ul.tags li
   padding: 10px
   
   li
-    padding: 5px
     display: inline-block
     height: 30px
-    margin-right: 10px
     border-radius: 50%
-    width: 30px
-    padding: 30px
-    border: 2px solid #ffe6ea
+    padding: 20px
     background-position: center
-    +transition(5s ease-in-out)
-    // &:first-child 
-    //   background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
-    //   background-position: center
-    // &:nth-child(2)
-    //   background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
-    //   background-position: center
-    // &:nth-child(3)
-    //   background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
-    //   background-position: center
-    // &:nth-child(4)
-    //   background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
-    //   background-position: center
-    // &:nth-child(5)
-    //   background-image: url("https://33.media.tumblr.com/23fa73402fb59d656466388a0618fcab/tumblr_n6x4kfxjzx1tq5oaao1_400.gif")
-    //   background-position: center
   span 
     font-size: 25px
     color: #f47f8e
     border-bottom: none !important
+    +transition(.2s all ease-in-out)
+    &:hover
+      color: #F6687A
 
 .about
   padding-top: 20px
   a 
     color: black
-    border-bottom: 1px dotted #ccc
   p
     font-size: 20px
     color: #858585
@@ -166,7 +148,6 @@ ul.tags li
     color: #969696
     font-weight: 600
     line-height: 1em
-    font-size: 13px
     text-transform: uppercase
     letter-spacing: .05em
   span.fa 
@@ -178,12 +159,12 @@ ul.tags li
   .previous
     float: right
     span.fa 
-      font-size: 40px
+      font-size: 30px
 
   .next
     float: left
     span.fa 
-      font-size: 40px
+      font-size: 30px
 
 \::selection
   background: $ltgray
