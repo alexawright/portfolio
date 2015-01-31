@@ -9,7 +9,7 @@ p
   color: #858585
   text-align: center
   a 
-    color: black
+    color: $black
     border-bottom: 1px dotted #ccc
 
 h1
@@ -26,7 +26,7 @@ h1
 
 .footer p
   font-size: 14px !important
-  padding: 100px 0 0 0
+  padding: 50px 0 10px 0
 
 .project-tile-wrap
   a h1
@@ -170,21 +170,19 @@ ul.tags li
   background: $ltgray
   color: $white
 
-@media (max-width: $screen-sm)
-
-.item h1
-  font-size: 25px
-
-@media (max-width: 670px)
-  
-  .about
-    padding: 100px
-  .about p
-    font-size: 22px
-
 @media (max-width: $screen-xs-max)
 
   .about
-    padding: 0 30px
+    padding: 0 10px
     p
-      font-size: 17px
+      font-size: 14px
+
+  .ul.social
+    margin: 0px auto 40px
+    padding: 0px
+
+  .studio
+    display: none
+
+  .footer p 
+    padding: 10px
