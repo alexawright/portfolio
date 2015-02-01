@@ -4,9 +4,6 @@
   &.loaded
     +opacity(1)
 
-#more
-  margin-top: 200px
-
 .project-tile-wrap 
   +make-xs-column(12)
   +make-md-column(6)
@@ -14,65 +11,19 @@
   cursor: pointer
   height: 470px
 
-  &.awright
-    background: url('/images/tnails/awright.gif') center no-repeat
-    background-size: cover
+  $project-tile-gifs: "awright" "gifgasm"
 
-  &.allpaws
-    background: url('/images/tnails/allpaws.jpg') center no-repeat
-    background-size: cover
+  $project-tile-jpgs: "allpaws" "bitcoin" "chloe" "cosine" "fox" "illustration" "infiniteloop" "logos" "manus" "nikon" "sols" "vestorly" "wang"
 
-  &.bitcoin
-    background: url('/images/tnails/bitcoin.jpg') center no-repeat
-    background-size: cover
+  @each $bg in $project-tile-gifs
+    &.#{$bg}
+      background: url('/images/tnails/#{$bg}.gif') center no-repeat
+      background-size: cover
 
-  &.chloe
-    background: url('/images/tnails/chloe.jpg') center no-repeat
-    background-size: cover
-
-  &.cosine
-    background: url('/images/tnails/cosine.jpg') center no-repeat
-    background-size: cover
-
-  &.fox
-    background: url('/images/tnails/fox.jpg') center no-repeat
-    background-size: cover
-
-  &.gifgasm
-    background: url('/images/gifgasm/gifgasm.gif') center no-repeat
-    background-size: cover
-
-  &.illustration
-    background: url('/images/tnails/illustration.jpg') center no-repeat
-    background-size: cover
-    
-  &.infiniteloop
-    background: url('/images/tnails/infiniteloop.jpg') center no-repeat
-    background-size: cover
-
-  &.logos
-    background: url('/images/tnails/cosine.jpg') center no-repeat
-    background-size: cover
-
-  &.manus
-    background: url('/images/tnails/manus.jpg') center no-repeat
-    background-size: cover
-
-  &.nikon
-    background: url('/images/tnails/nikon.jpg') center no-repeat
-    background-size: cover
-
-  &.sols
-    background: url('/images/tnails/sols.jpg') center no-repeat
-    background-size: cover
-
-  &.vestorly
-    background: url('/images/tnails/vestorlabs.jpg') center no-repeat
-    background-size: cover
-
-  &.wang
-    background: url('/images/tnails/wang.jpg') center no-repeat
-    background-size: cover
+  @each $bg in $project-tile-jpgs
+    &.#{$bg}
+      background: url('/images/tnails/#{$bg}.jpg') center no-repeat
+      background-size: cover
 
 .bg
   padding: 230px 0
@@ -248,7 +199,6 @@
   text-align: center
   margin: auto
   img
-    max-width: 100%
     &.border 
       border: 1px solid $ltgray
     &.shadow
@@ -281,27 +231,38 @@
   width: 1150px
   height: 780px
 
-@media (max-width: $screen-xs)
-
-  .img-responsive
-    margin: 0 15px
+@media (max-width: $screen-xs-max)
 
   .project-tile-wrap
     height: 300px
 
   .full-width-block
     margin-bottom: 40px
-    img
-      width: 100%
+
+  .col-sm-12.wang
+    margin-bottom: 15px
 
   .bg
     padding: 20px 0
     img
       margin: 30px 0
       padding: 50px
+    &.vestorlabs2
+      background: url("/images/vestorly/vestorlabs2.jpg") no-repeat
+      height: 250px
+      background-size: 220%
+      background-position: center center
+      margin: 60px 0
+    &.sols3
+      padding: 0
+    &.sols2
+      height: 300px
 
   .dash
-    margin: 0px auto 105px !important
+    margin: 30px auto 85px !important
+
+  img.johnfischer 
+    padding: 20px
 
   .btn 
     padding: 21px
@@ -317,18 +278,17 @@
       width: 120px
 
   .info
-    margin: 20px 0 50px
+    margin: 50px 0 50px
     padding: 0 10px
 
   .project-body
     .row
       margin-bottom: 28px
+    img
+      width: 100%
+      &.shadow
+        box-shadow: 0px 1px 12px rgba(230, 231, 232, 0.47)
 
 @media (max-width: $screen-md)
   .video-frame
     background-image: none !important
-
-@media (max-width: 570px)
-
-  img.space
-    margin-bottom: 30px
