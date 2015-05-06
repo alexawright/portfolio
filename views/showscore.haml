@@ -1,0 +1,41 @@
+.full-width-block
+  .row.bg.showscore
+    .col-md-12   
+      %img.load-img.img-responsive{:src => "/images/showscore/showscore-logo.png"}
+  .row.bg.showscore2
+    .col-md-12 
+      %img.load-img.img-responsive{:src => "/images/showscore/showscore-seal.gif"} 
+  .row.bg.showscore3
+    .col-md-12 
+      %img.load-img.img-responsive{:src => "/images/showscore/showscore-logo3.png"} 
+
+.container.project-body
+  .row
+    .col-md-12   
+      %img.load-img.img-responsive{:src => "/images/showscore/showscore-imac.jpg"} 
+      %img.load-img.img-responsive.border.shadow{:src => "/images/showscore/showscore-1.jpg"} 
+
+  .info 
+    %h1
+      Show-Score
+    %p
+      All designs displayed on this site are a reflection of my own design decisions, some of which were not carried through to the live site.
+
+    %ul.tags
+      %li Visual Identity
+      %li Visual Design
+    %h2 
+      %a{:href => "http://www.show-score.com", :target => "_blank"} www.show-score.com
+
+  
+.pagination
+  .inner
+    %a{:href => "/XXX"} 
+      .previous
+        %span.fa.fa-angle-right
+    %a{:href => "/XXX"} 
+      .next
+        %span.fa.fa-angle-left 
+
+= haml :work
+

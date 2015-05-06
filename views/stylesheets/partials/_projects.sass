@@ -24,7 +24,7 @@
 
   $project-tile-gifs: "awright" "gifgasm"
 
-  $project-tile-jpgs: "allpaws" "bitcoin" "chloe" "cosine" "fox" "illustration" "infiniteloop" "logos" "manus" "nikon" "sols" "vestorly" "wang"
+  $project-tile-jpgs: "allpaws" "bitcoin" "chloe" "cosine" "fox" "illustration" "infiniteloop" "logos" "manus" "nikon" "sols" "vestorly" "wang" "showscore"
 
   @each $bg in $project-tile-gifs
     &.#{$bg}
@@ -96,6 +96,20 @@
     background: url("/images/tcg/mp-bg.jpg")
     background-size: cover
 
+  &.showscore
+    background: url("/images/showscore/showscore-bg.jpg")
+    background-size: cover
+  &.showscore2
+    border-bottom: 1px solid #ddd
+    padding: 150px 100px
+    margin: auto
+    background: #f4f4f4
+    img 
+      padding: 50px
+  &.showscore3
+    background: url("/images/showscore/showscore-bg2.jpg")
+    background-size: cover
+    
   &.sols
     background: #e5e5e5
     background: url("/images/sols/sols-bg.jpg")
