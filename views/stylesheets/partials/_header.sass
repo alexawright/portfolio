@@ -17,8 +17,10 @@ header
 .spacer
   padding: 40px
 
+h1.main-name
+  color: $white
+
 .name
-  opacity: 0.9
   display: block
   margin: 40px auto
   text-align: center
@@ -35,11 +37,14 @@ header
     padding: 0 20px
     a
       font-weight: 500
-      font-size: 14px
-      +font
+      font-size: 13px
+      font-family: avenir, "proxima-nova-alt", helvetica, arial, sans-serif
       font-style: none !important
-      color: #969696
+      color: #4D4D4D
       text-decoration: none
+      letter-spacing: .02em
+      opacity: .8
+      font-weight: 500
       &:hover
         color: #7B7B7B
         +transition(.3s)

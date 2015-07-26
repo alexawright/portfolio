@@ -1,3 +1,11 @@
+.avatar-overlay
+  margin-top: -75px
+  img.avatar
+    width: 150px
+    border: 2px solid $white
+    height: 150px
+    border-radius: 50%
+
 .load-img
   +transition(all .5s)
   +opacity(0)
@@ -150,6 +158,13 @@
   &.torii2
     background: #f9faff
 
+  &.about-me
+    background: url("/images/awright/sweater/alexa-wright-cardigan-2-gray.jpg")
+    background-position: center center
+    background-size: 30%
+    background-opacity: 50%
+    padding: 110px
+
   &.vestorlabs
     background: #323a47
   &.vestorlabs1
@@ -175,10 +190,11 @@
   text-align: center
   font-weight: 600
   letter-spacing: .08em
-  font-size: 14px
+  font-size: 15px
   cursor: pointer
   padding: 21px
   margin: 50px auto
+  font-family: "futura pt", "avenir", "proxima-nova", arial
   &.contact1
     border: 2px solid #f9626d
     width: 240px
@@ -201,6 +217,15 @@
       background-image: url("/images/prince.gif")
       background-position: center
       +transition(3s ease-in-out)
+  &.contact3
+    border: 2px solid #f9626d
+    width: 300px
+    color: #f9626d
+    +transition(.4s)
+    margin: auto
+    &:hover
+      color: #c453a4
+      border: 2px solid #f272c7
   &.more
     border: 2px solid #ffe6ea
     font-size: 12px
@@ -230,6 +255,10 @@
     margin: auto
     display: block
     text-align: center
+
+.full-width-block-about
+  margin-bottom: 50px
+  text-align: center
 
 .project-body
   img

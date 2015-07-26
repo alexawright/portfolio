@@ -1,31 +1,32 @@
-.container
-  .row.about
-    .col-sm-12
-      %img.name{:src => "/images/name.png"}
-      %p
-        I'm a visual designer, artist, and creative director based in Los Angeles, California. I design digital (as well as physical) products and do front-end web development. I make brands and products look, feel, & function better through balanced design.
-      %p
-        Interested in working together? Email me at 
-        = haml :email
+.full-width-block-about
+  .row.bg.about-me
+    .col-md-12  
+      %h1.white-name Alexa Wright
+  .row.avatar-overlay
+    %img.avatar.load-img{:src => "/images/alexa-wright.jpg"}  
 
-    .row
-      .ul.social
-        %li
-          %a{:href => "http://brainfood.alexa-wright.com", :target => "_blank"} 
-            %span.fa.fa-tumblr
-        %li
-          %a{:href => "http://www.twitter.com/alexa_wright_", :target => "_blank"} 
-            %span.fa.fa-twitter 
-        %li
-          %a{:href => "http://www.instagram.com/alexa_wright", :target => "_blank"} 
-            %span.fa.fa-instagram 
-        %li
-          %a{:href => "http://www.pinterest.com/alexa_wright_/pins/", :target => "_blank"} 
-            %span.fa.fa-pinterest
-    / .row
-    /   .col-sm-12
-    /     %img.studio.img-responsive{:src => "/images/studio6.jpg"}
-    .row
-      .col-sm-12
-        .footer
-          %p © 2015 Alexa Wright, Inc.
+.container.about-blurb
+  %p
+    I'm a visual designer, artist, and creative director based in Los Angeles, California (recently relocated from NYC). I brand businesses, design digital products, and do front-end web development. I care about improving the visual world around me through design, photography, and hand-crafted items.
+  %p
+    Interested in working together? Drop me a line at
+    = haml :email3
+  .row
+    .ul.social
+      %li
+        %a{:href => "http://brainfood.alexa-wright.com", :target => "_blank"} 
+          %span.fa.fa-tumblr
+      %li
+        %a{:href => "http://www.twitter.com/alexa_wright_", :target => "_blank"} 
+          %span.fa.fa-twitter 
+      %li
+        %a{:href => "http://www.instagram.com/alexa_wright", :target => "_blank"} 
+          %span.fa.fa-instagram 
+      %li
+        %a{:href => "http://www.pinterest.com/alexa_wright_/pins/", :target => "_blank"} 
+          %span.fa.fa-pinterest
+
+  .row
+    .col-sm-12
+      .footer
+        %p © 2015 Alexa Wright, Inc.
