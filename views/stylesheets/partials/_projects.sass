@@ -2,7 +2,7 @@
   margin-top: -75px
   img.avatar
     width: 150px
-    border: 2px solid $white
+    border: 3px solid $white
     height: 150px
     border-radius: 50%
 
@@ -30,9 +30,9 @@
     right: 0
     bottom: 0
 
-  $project-tile-gifs: "awright" "gifgasm"
+  $project-tile-gifs: "awright" "gifgasm" "showscore"
 
-  $project-tile-jpgs: "allpaws" "bitcoin" "chloe" "cosine" "fox" "illustration" "infiniteloop" "logos" "manus" "nikon" "sols" "vestorly" "wang" "showscore"
+  $project-tile-jpgs: "allpaws" "bitcoin" "chloe" "cosine" "fox" "illustration" "infiniteloop" "logos" "manus" "nikon" "sols" "vestorly" "wang" "lassanai"
 
   @each $bg in $project-tile-gifs
     &.#{$bg}
@@ -102,6 +102,10 @@
     background: url("/images/infinite-loop/loop-bg.jpg")
     background-size: cover
 
+  &.lassanai
+    background: url("/images/lass/lassanai-bg.jpg")
+    background-size: cover
+
   &.manus
     background: url("/images/manusbio/manus-bg.jpg")
     background-size: cover
@@ -119,15 +123,18 @@
     background: url("/images/showscore/showscore-bg.jpg")
     background-size: cover
   &.showscore2
-    border-bottom: 1px solid #ddd
     margin: auto
     background: #F7F7FC
     img 
-      padding: 50px
+      padding: 50px 0 0 0
   &.showscore3
     background: $white
     background-size: cover
     border-bottom: 1px solid #ddd
+  &.showscore4
+    background: url("/images/showscore/showscore-bg3.jpg")
+    background-size: cover
+    padding: 300px
     
   &.sols
     background: #e5e5e5
@@ -161,9 +168,7 @@
   &.about-me
     background: url("/images/about-bg.jpg")
     background-position: center top
-    background-size: 30%
-    background-opacity: 50%
-    padding: 110px
+    padding: 110px 0
 
   &.vestorlabs
     background: #323a47
@@ -194,7 +199,7 @@
   cursor: pointer
   padding: 21px
   margin: 50px auto
-  font-family: "futura pt", "avenir", "proxima-nova", arial
+  font-family: "futura-pt", "futura pt",  "avenir", "proxima-nova", arial
   &.contact1
     border: 2px solid #f9626d
     width: 240px
@@ -316,6 +321,10 @@
     img
       margin: 30px 0
       padding: 50px
+    &.showscore2
+      margin: auto
+      background: #F7F7FC
+      padding: 10px 0 0 0
     &.vestorlabs2
       background: url("/images/vestorly/vestorlabs2.jpg") no-repeat
       height: 250px
@@ -336,6 +345,7 @@
   .btn 
     padding: 21px
     margin: 50px auto
+    font-size: 13px
     &.contact1
       margin: 40px 0 0
       width: 200px !important

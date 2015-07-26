@@ -5,17 +5,50 @@
   .row.bg.showscore2
     .col-md-12 
       %img.load-img.img-responsive{:src => "/images/showscore/showscore-seal.gif"} 
+  .row.bg.showscore4
+    .col-md-12
   .row.bg.showscore3
     .col-md-12
       %img.load-img.img-responsive{:src => "/images/showscore/showscore-logo3.png"} 
 
+.container.project-body
+  .row
+    .col-md-12
+      %img.load-img.img-responsive{:src => "/images/showscore/showscore-imac.jpg"} 
+  / .row
+  /   .col-md-12
+  /     %img.load-img.img-responsive.shadow.border{:src => "/images/showscore/showscore-1.jpg"} 
+  / .row
+  /   .col-md-12
+  /     %img.load-img.img-responsive.shadow.border{:src => "/images/showscore/showscore-3.jpg"} 
 
-.container
+  / .row
+  /   .col-md-12
+  /     %img.load-img.img-responsive{:src => "/images/showscore/showscore-2.jpg"} 
+
   .info 
     %h1
       Show-Score
     %p
-      Show-Score is an online community where theater-lovers and professional critics can review, discuss, and discover exciting new theater. In creating a vision and visual identity for Show-Score, I explored the concept of spotlights. Show-Score is a resource that shines a spotlight on new and interesting shows. Each member and critic is shedding his or her own spotlight onto a show to create an overall impression that helps theater-goers decide which shows to check out.
+      Show-Score is an online community where theater-lovers and professional critics can review, discuss, and discover exciting new theater. I collaborated as a team member Infinite Loop, Co. to visualize the brand of Show-Score and create a fully responsive MVP. Ryan Rogalski brought visual designs to life through front-end design and development, and Charlie Schwabacher and Nicholas Zaillian collaborated to build the back-end of the site.
+    %p 
+      In envisioning a creative direction for Show-Score, I explored the concept of spotlights. Show-Score is a resource that showcases new and interesting shows. Each member and critic is shedding his or her own spotlight onto a show to create an overall impression that helps theater-goers decide which shows to check out.
 
-    %p
-      Furthermore, spotlights are a natural design tool that can be used within branded design. They provide directional lighting to help guide the eye, and they establish an atmosphere, with a timeless quality suited to all types of theater.
+    %ul.tags
+      %li Visual Identity/Branding
+      %li Art Direction
+      %li UI/UX Design
+    %h2 
+      %a{:href => "http://www.show-score.com", :target => "_blank"} www.show-score.com
+    %p Live website has been altered since original implementation and is not reflective of my design decisions.
+  
+.pagination
+  .inner
+    %a{:href => "/manusbio"} 
+      .previous
+        %span.fa.fa-angle-right
+    %a{:href => "/illustration"} 
+      .next
+        %span.fa.fa-angle-left 
+
+= haml :work
