@@ -1,10 +1,20 @@
 .avatar-overlay
   margin-top: -75px
-  img.avatar
-    width: 150px
-    border: 3px solid $white
-    height: 150px
-    border-radius: 50%
+  background: #db4646
+  background-image: url("/images/alexa-wright.jpg")
+  background-position: center
+  background-size: cover
+  margin: auto
+  text-align: center
+  width: 150px
+  border: 3px solid $white
+  height: 150px
+  border-radius: 50%
+  margin-top: -75px
+  &:hover
+    +transition(3s ease-in-out)
+    +rotate(720deg)
+    background-image: url("/images/sloth.gif")
 
 .load-img
   +transition(all .5s)
@@ -29,7 +39,6 @@
     left: 0
     right: 0
     bottom: 0
-
   $project-tile-gifs: "awright" "gifgasm" "showscore"
 
   $project-tile-jpgs: "allpaws" "bitcoin" "chloe" "cosine" "fox" "illustration" "infiniteloop" "logos" "manus" "nikon" "sols" "vestorly" "wang" "lassanai"

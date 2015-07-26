@@ -1,6 +1,26 @@
 p.lassanai 
   font-style: italic
 
+ul.skills
+  margin: auto
+  display: block
+  width: 95%
+  text-align: center
+  li 
+    display: inline-block
+    background: #FFF4F5
+    padding: 5px 25px
+    margin: 7px 5px
+    line-height: 2.2em
+    color: rgb(245, 142, 160)
+    border-radius: 30px
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 600
+    letter-spacing: .03em
+    &:hover
+      +transition(.4s)
+
 .white-name
   color: $white
   font-family: "futura-pt", "futura pt",  "avenir", arial
@@ -65,7 +85,7 @@ h1
     letter-spacing: .17em
     cursor: pointer
     &:hover
-      +transition(.4s)
+      +transition(.5s)
 
 
 .info h2 a
@@ -165,7 +185,7 @@ ul.tags li
     text-align: center
 
   span
-    color: #969696
+    color: #FF8FA6
     font-weight: 600
     line-height: 1em
     text-transform: uppercase
